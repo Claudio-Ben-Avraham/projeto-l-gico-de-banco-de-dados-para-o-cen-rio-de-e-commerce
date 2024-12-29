@@ -75,7 +75,7 @@ FROM Cliente c
 JOIN Pedido p ON c.cliente_id = p.cliente_id
 JOIN Pagamento pg ON p.pedido_id = pg.pedido_id;
 
-7. Clientes com mais de 5 pedidos:
+## 7. Clientes com mais de 5 pedidos:
 
 SELECT cliente_id, COUNT(pedido_id) AS total_pedidos
 FROM Pedido
